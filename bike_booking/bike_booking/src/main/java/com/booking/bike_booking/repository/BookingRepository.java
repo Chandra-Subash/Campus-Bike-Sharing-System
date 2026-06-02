@@ -1,0 +1,17 @@
+package com.booking.bike_booking.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.booking.bike_booking.model.Booking;
+
+public interface BookingRepository
+        extends JpaRepository<Booking, Long> {
+
+    List<Booking> findByUserId(Long userId);
+
+    List<Booking>
+            findByBikeOwnerId(Long ownerId);
+
+}

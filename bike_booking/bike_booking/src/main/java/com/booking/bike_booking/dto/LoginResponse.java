@@ -1,0 +1,57 @@
+
+package com.booking.bike_booking.dto;
+
+public class LoginResponse {
+
+    private Long id;
+    private String name;
+    private String role;
+    private String message;
+
+    public LoginResponse() {
+    }
+
+    public LoginResponse(
+            Long id,
+            String name,
+            String role,
+            String message) {
+
+        this.id = id;
+        this.name = name;
+        this.role = role;
+        this.message = message;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}
